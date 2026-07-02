@@ -1,0 +1,284 @@
+/* 토스 컨셉 — 라이트 그레이 + 시그니처 블루 */
+[data-theme="light"] {
+  --bg: #f2f4f6;
+  --bg-card: #ffffff;
+  --bg-hover: #f9fafb;
+  --bg-sidebar: #ffffff;
+  --border: #e5e8eb;
+  --text: #000000;
+  --text-muted: #333333;
+  --text-subtle: #555555;
+  --accent: #3182f6;
+  --accent-soft: rgba(49, 130, 246, 0.1);
+  --accent-hover: #1b64da;
+  --success: #30b94b;
+  --success-soft: rgba(48, 185, 75, 0.12);
+  --warning: #f5a623;
+  --danger: #f04452;
+  --danger-soft: rgba(240, 68, 82, 0.1);
+  --learned-bg: linear-gradient(135deg, #ffffff 0%, rgba(49, 130, 246, 0.05) 100%);
+  --flashcard-front-bg: linear-gradient(165deg, #ffffff 0%, #eef4fe 100%);
+  --backdrop: rgba(25, 31, 40, 0.4);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --shadow: 0 8px 24px rgba(0, 23, 51, 0.08);
+  --card-shadow: 0 2px 8px rgba(0, 23, 51, 0.06);
+  --sidebar-shadow: none;
+  --input-bg: #f2f4f6;
+  --input-focus-shadow: 0 0 0 3px rgba(49, 130, 246, 0.18);
+  --tabs-bg: #f2f4f6;
+  --tabs-border: none;
+  --progress-track: #e5e8eb;
+  --progress-gradient: linear-gradient(90deg, #3182f6, #5b9dff);
+  --logo-title: #000000;
+  --btn-primary-text: #ffffff;
+  --font: 'Noto Sans KR', -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --sidebar-w: 280px;
+}
+
+[data-theme="light"] body {
+  background: var(--bg);
+}
+
+[data-theme="light"] .sidebar {
+  border-right: none;
+}
+
+[data-theme="light"] .sidebar-header {
+  background: #ffffff;
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+}
+
+[data-theme="light"] .logo h1 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+[data-theme="light"] .chapter-btn {
+  border-radius: 12px;
+  color: #333333;
+}
+
+[data-theme="light"] .chapter-btn:hover {
+  color: #000000;
+}
+
+[data-theme="light"] .chapter-btn.active {
+  background: rgba(49, 130, 246, 0.1);
+  color: #1b64da;
+  border-left: none;
+  padding-left: 0.85rem;
+  font-weight: 700;
+}
+
+[data-theme="light"] .chapter-btn .chapter-label {
+  color: #1b64da;
+  opacity: 1;
+}
+
+[data-theme="light"] .mode-tabs {
+  border-radius: 14px;
+  padding: 0.3rem;
+}
+
+[data-theme="light"] .mode-tab {
+  border-radius: 10px;
+  color: #333333;
+}
+
+[data-theme="light"] .mode-tab:hover {
+  color: #000000;
+}
+
+[data-theme="light"] .mode-tab.active {
+  background: #ffffff;
+  color: #3182f6;
+  box-shadow: 0 1px 4px rgba(0, 23, 51, 0.08);
+  font-weight: 700;
+}
+
+[data-theme="light"] .term-card {
+  border: none;
+  border-radius: 16px;
+}
+
+[data-theme="light"] .term-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 23, 51, 0.1);
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .term-card.learned {
+  border: 2px solid #3182f6;
+  box-shadow: 0 4px 16px rgba(49, 130, 246, 0.12);
+}
+
+[data-theme="light"] .flashcard-front,
+[data-theme="light"] .flashcard-back {
+  border: none;
+  border-radius: 20px;
+}
+
+[data-theme="light"] .flashcard-front {
+  box-shadow: 0 4px 20px rgba(49, 130, 246, 0.12);
+}
+
+[data-theme="light"] .flashcard-front h2 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+[data-theme="light"] .btn {
+  border-radius: 12px;
+}
+
+[data-theme="light"] .btn-primary {
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(49, 130, 246, 0.25);
+}
+
+[data-theme="light"] .btn-primary:hover {
+  background: #1b64da;
+  box-shadow: 0 4px 12px rgba(49, 130, 246, 0.3);
+}
+
+[data-theme="light"] .btn-secondary {
+  background: #f2f4f6;
+  border: none;
+  font-weight: 600;
+}
+
+[data-theme="light"] .btn-secondary:hover {
+  background: #e5e8eb;
+}
+
+[data-theme="light"] .theme-switch {
+  color: #3182f6;
+  border: none;
+  background: #f2f4f6;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+[data-theme="light"] .theme-switch:hover {
+  background: rgba(49, 130, 246, 0.1);
+}
+
+[data-theme="dark"] .theme-switch {
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="light"] .topbar {
+  background: #ffffff;
+  border-bottom: none;
+  box-shadow: 0 1px 0 #e5e8eb;
+}
+
+[data-theme="light"] .search-box input {
+  border-radius: 14px;
+  background: #f2f4f6;
+  border-color: transparent;
+  color: #000000;
+}
+
+[data-theme="light"] .search-box input:focus {
+  background: #ffffff;
+  border-color: #3182f6;
+}
+
+[data-theme="light"] .search-box input::placeholder {
+  color: #666666;
+}
+
+[data-theme="light"] .quiz-card {
+  border: none;
+  border-radius: 20px;
+}
+
+[data-theme="light"] .quiz-option {
+  border-radius: 12px;
+  border-color: transparent;
+  background: #f2f4f6;
+  font-weight: 500;
+  color: #000000;
+}
+
+[data-theme="light"] .quiz-option:hover:not(:disabled) {
+  background: rgba(49, 130, 246, 0.08);
+}
+
+[data-theme="light"] .quiz-done h3 {
+  color: #3182f6;
+  font-weight: 800;
+}
+
+[data-theme="light"] .modal-content {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 16px 48px rgba(0, 23, 51, 0.16);
+}
+
+[data-theme="light"] .stat-value {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1b64da;
+}
+
+[data-theme="light"] .flashcard-controls select,
+[data-theme="light"] .quiz-header select {
+  border-radius: 12px;
+  border-color: transparent;
+  background: #f2f4f6;
+  font-weight: 500;
+  color: #000000;
+}
+
+[data-theme="light"] .panel-header h2,
+[data-theme="light"] .term-card-title,
+[data-theme="light"] .quiz-question,
+[data-theme="light"] .modal-term-title,
+[data-theme="light"] .modal-section-body,
+[data-theme="light"] .modal-section-body p,
+[data-theme="light"] .flash-section p,
+[data-theme="light"] .quiz-feedback p,
+[data-theme="light"] .quiz-start p,
+[data-theme="light"] .quiz-done p {
+  color: #000000;
+}
+
+[data-theme="light"] .term-card-preview,
+[data-theme="light"] .term-card-chapter,
+[data-theme="light"] .term-count,
+[data-theme="light"] .flash-hint,
+[data-theme="light"] .keyboard-hint,
+[data-theme="light"] .quiz-label,
+[data-theme="light"] .stat-label,
+[data-theme="light"] .logo-sub,
+[data-theme="light"] .empty-state {
+  color: var(--text-subtle);
+}
+
+[data-theme="light"] .modal-term-chapter {
+  color: #1b64da;
+  font-weight: 600;
+}
+
+[data-theme="light"] .modal-section-title,
+[data-theme="light"] .flash-section-label,
+[data-theme="light"] .term-card-num,
+[data-theme="light"] .flash-chapter {
+  color: #1b64da;
+  font-weight: 700;
+}
+
+[data-theme="light"] .modal-close {
+  color: #333333;
+}
+
+[data-theme="light"] .modal-close:hover {
+  color: #000000;
+}

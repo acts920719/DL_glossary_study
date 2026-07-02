@@ -1,0 +1,26 @@
+[data-theme="dark"] {
+  --bg: #0f1419;
+  --bg-card: #1a2332;
+  --bg-hover: #243044;
+  --bg-sidebar: #121a24;
+  --border: #2d3a4f;
+  --text: #e8edf4;
+  --text-muted: #8b9cb3;
+  --accent: #5b9cf5;
+  --accent-soft: rgba(91, 156, 245, 0.15);
+  --accent-hover: #7ab0ff;
+  --success: #4ade80;
+  --success-soft: rgba(74, 222, 128, 0.15);
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.15);
+  --learned-bg: linear-gradient(135deg, #1a2332 0%, rgba(74, 222, 128, 0.05) 100%);
+  --flashcard-front-bg: linear-gradient(145deg, #1a2332 0%, #1e2d42 100%);
+  --backdrop: rgba(0, 0, 0, 0.7);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --font: 'Noto Sans KR', -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --sidebar-w: 280px;
+}
